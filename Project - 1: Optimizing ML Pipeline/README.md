@@ -17,7 +17,7 @@ This model is then compared to an Azure AutoML run.
 ## Summary
 
 **In 1-2 sentences, explain the problem statement: e.g "This dataset contains data about... we seek to predict..."**
-In this project we have used UCI Bank Marketing dataset, which is related with direct marketing campaigns of a Portuguese baking institution. The classification objective (y) is to predict whether the customer will subscribe to a term deposit or not. More details about the data, can be found below.
+This project uses the UCI Bank Marketing dataset, which is related with direct marketing campaigns of a Portuguese baking institution. The classification objective (y) is to predict whether the customer will subscribe to a term deposit or not. More details about the data, can be found below.
 
 **In 1-2 sentences, explain the solution: e.g. "The best performing model was a ..."**
 In this project, we used Scikit-Learn logistic regression and trained the hyperparameters using HyperDrive. We also used AutoML to build and optimize a model on the same dataset so that we can compare the results of the two methods. The best model was obtained using AutoML - VotingEnsemble with an accuracy of 0.949.
