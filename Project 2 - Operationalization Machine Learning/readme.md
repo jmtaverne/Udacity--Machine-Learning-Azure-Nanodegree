@@ -55,7 +55,7 @@ The dataset is provided via a .csv file. It can be uploaded into a dataset.
 
 This image shows the dataset was uploaded and registered successfully for use by the AutoML training.
 
-![Dataset](images/Benchmarking data.jpg)
+![Dataset](images/Benchmarkingdata.png)
 
 **2. AutoML Config**
 
@@ -115,7 +115,7 @@ pipeline_run = experiment.submit(pipeline)
 
 The pipeline run was monitored from within the notebook with the RunDetails [Jupyter widget](http://jupyter.org/widgets) as shown here:
 
-![Widget](images/RunWidget.jpg)
+![Widget](images/RunWidget.png)
 
 
 **5. Pipeline Run Completion**
@@ -124,17 +124,17 @@ The pipeline run successfully completed as shown in the series of screenshots pr
 
 If you click on the `Run` link to drill down to the run Graph and Pipeline run overview:
 
-![ExpDtlDone](images/pipelinerundetail.jpg)
+![ExpDtlDone](images/pipelinerundetail.png)
 
 The run produced a list of top performing models in descending order of _**AUC weighted accuracy**_. The best model topping the list is the one named `VotingEnsemble`:
 
-![BestModelList](images/Best model.jpg)
+![BestModelList](images/Bestmodel.png)
 
 Clicking the `VotingEnsemble` hyperlink revealed details of the best model:
 
-![BestModeldtl](images/Model detail 1.JPG)
-![BestModeldtl](images/Model detail 2.JPG) 
-![BestModeldtl](images/model detail explanation.JPG)
+![BestModeldtl](images/Modeldetail1.png)
+![BestModeldtl](images/Modeldetail2.png) 
+![BestModeldtl](images/modeldetailexplanation.png)
 
 **6. Conclusion**
 
@@ -149,7 +149,7 @@ This was done by clicking the _**Deploy**_ button from the best model _**Details
 
 When the deployment was done, an endpoint was generated along with a Swagger URI. This was visible from the _**Endpoints**_ console in the `AML Studio`. Notice that `Application Insights` was also already enabled.
 
-![BMDeploystatus](images/Deployment detail.jpg)
+![BMDeploystatus](images/Deploymentdetail.png)
 
 **2. Enable Logging**
 
@@ -180,12 +180,12 @@ For this script to execute successfully, the AML workspace configuration file `c
 
 The screenshot below shows successful execution of the `logs.py` script with `Application Insights` enabled and logs retrieved:
 
-![LogEnable](images/Deployment detail.png)
+![LogEnable](images/Deploymentdetail.png)
 
 
 The _**Deployment**_ tab on the same page displayed logs received:
 
-![LogEnabled2](images/Deployment logs.jpg)
+![LogEnabled2](images/Deploymentlogs.png)
 
 **3. Swagger Documentation**
 
@@ -203,7 +203,7 @@ Next up, the best model endpoint was put to test by executing a python script `C
 
 This screenshot shows the response from the `POST` request to the endpoint and the payload used for testing the endpoint was saved to the `data.json` file:
 
-![EndpointTst](images/Response consume endpoint.jpg)
+![EndpointTst](images/Responseconsumeendpoint.png)
 
 **5. Conclusion**
 
@@ -226,11 +226,11 @@ published_pipeline
 
 The published pipeline object named `Bankmarketing Train` came with an endpoint and showed up on the _**Pipelines**_ console with an active status in the `AML Studio`, as shown here:
 
-![PipelinePub](images/PipelineEndpoint.jpg)
+![PipelinePub](images/PipelineEndpoint.png)
 
 The pipeline endpoint was viewable from the _**Pipelines**_ console by clicking the published pipeline name `Bankmarketing Train` to get to the _**Details**_ tab, like so:
 
-![PipelineEP](images/bankmarketing_pipeline_rest_api.jpg)
+![PipelineEP](images/bankmarketing_pipeline_rest_api.png)
 
 **2. Post a request to the endpoint to start a run**
 
@@ -252,13 +252,13 @@ Clicked on the Experiment `pipeline-rest-endpoint` link from the _**Experiments*
 
 Clicked on `Run 1` link from the _**Experiments**_ console to see the Pipeline run overview on the _**Graph**_ tab. It had an active status and a `HTTP` Run type, proving the run was triggered by the `POST` request to the published pipeline endpoint.
 
-![PipelineExpDtlRun](images/pipelinerundetail.jpg)
+![PipelineExpDtlRun](images/pipelinerundetail.png)
 
 **3. Monitor the Pipeline run with Jupyter widget**
 
 The Pipeline run was monitored from within the notebook with the RunDetails [Jupyter widget](http://jupyter.org/widgets). It was shown as running:
 
-![PipelineEPRun](images/pipelineeprun.jpg)
+![PipelineEPRun](images/pipelineeprun.png)
 
 **4. Conclusion**
 
