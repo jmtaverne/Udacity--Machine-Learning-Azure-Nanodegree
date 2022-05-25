@@ -60,22 +60,22 @@ In our experiment we found out VotingEnsemble to be the best model based on the 
 
 ### AutoML Screenshots
 Create Experiment 
-![](images/submit experiment automl.png)
+![](images/submitexperimentautoml.png)
 
 RunDetails
-![](images/RunDetails AutoML.png)
+![](images/RunDetailsAutoML.png)
 
 BestModel
-![](images/BestModel AutoML.png)
+![](images/BestModelAutoML.png)
 
 Save best model
-![](images/Model saved AutoML.png)
+![](images/ModelsavedAutoML.png)
 
 Deploy model
-![](images/Deploy AutoML.png)
+![](images/DeployAutoML.png)
 
 Test API
-![](images/API Test AutoML.png)
+![](images/APITestAutoML.png)
 
 ## Hyperparameter Tuning
 We use RandomForestClassifier algorithm from the SKLearn framework in conjuction with hyperDrive for hyperparameter tuning. There are two hyperparamters for this experiment, max_depth and n_estimators. 
@@ -110,16 +110,16 @@ The highest accuracy that our RandomForestClassifier Model achieved was 0.76198.
 
 ### hyperDrive Screenshots
 RunDetails
-![](images/RunDetails HyperDrive.png)
+![](images/RunDetailsHyperDrive.png)
 
 BestModel
-![](images/Best  model Hyperdrive.png)
+![](images/BestmodelHyperdrive.png)
 
 Save model
-![](images/Savedmodel hyperdrive.png)
+![](images/Savedmodelhyperdrive.png)
 
 Check if model is saved
-![](images/Saved model HyperDrive.png)
+![](images/SavedmodelHyperDrive.png)
 
 ## Model Deployment
 To deploy a Model using Azure Machine Learning Service, we need following:
@@ -141,7 +141,7 @@ For Inference, the data passed to the model endpoint must be in JSON format. Fol
 Screenshots below show a demonstration of sample data response from the deployed model.
 
 Test
-![](images/API Test AutoML.png)
+![](images/APITestAutoML.png)
 
 Python example is available at the consume section inside our endpoint.
 
